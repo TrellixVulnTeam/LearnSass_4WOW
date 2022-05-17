@@ -1,0 +1,27 @@
+@mixin common ($color, $text-transform) {
+    color: $color; text-transform: $text-transform; 
+}
+@mixin header ($bgcolor, $margin) {
+    background-color: $bgcolor; 
+    padding: 10px; 
+    margin: $margin;
+    text-align: center;
+}
+@mixin divproperty {
+    color: #000;
+    background-color: aqua;
+    padding: 10px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+@mixin margin ($postion, $unit) {
+    margin-#{$postion}: $unit + px;
+}
+
+@mixin classname ($name) {
+    .test-#{$name}{
+        color: red;
+    }
+}
+

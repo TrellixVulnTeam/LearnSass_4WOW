@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box; }
+
+.first {
+  background-color: #000;
+  padding: 10px;
+  margin: 30px auto;
+  text-align: center; }
+  .first h1 {
+    color: blue;
+    text-transform: uppercase; }
+    .first h1:hover {
+      color: #fff; }
+    .first h1::after {
+      content: ' test'; }
+  .first p {
+    color: blue;
+    text-transform: uppercase; }
+    .first p:hover {
+      color: #fff; }
+
+.second {
+  background-color: red;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center; }
+  .second h1 {
+    color: #fff;
+    text-transform: capitalize; }
+
+.third {
+  background-color: green;
+  padding: 10px;
+  margin: 30px auto;
+  text-align: center; }
+  .third h1 {
+    color: yellow;
+    text-transform: uppercase; }
+
+.one, .two, .three {
+  color: #000;
+  background-color: aqua;
+  padding: 10px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.two, .three {
+  background-color: red;
+  border-radius: 5px; }
+
+.three {
+  background-color: yellow; }
+
+.one, .two, .three {
+  margin-left: 30px; }
+
+.test {
+  margin-left: 20px; }
+
+.test-domo {
+  color: red; }
+
+.test1 h1 {
+  text-transform: UPPERCASE; }

@@ -1,0 +1,70 @@
+* {margin: 0; padding: 0; font-family: 'Poppins', sans-serif;box-sizing: border-box}
+@import 'mixins';
+@import 'variable';
+
+// variable & mixins & include
+.first {
+     @include header (#000, 30px auto);
+        h1 { 
+            @include common (blue, uppercase);
+                &:hover{
+                    color: $textcolor;
+                }
+                &::after{
+                    content: ' test';
+                }
+        }
+
+        p {
+            @include common (blue, uppercase);
+                &:hover {
+                    color: $textcolor;
+                }
+        }
+}
+
+.second { 
+    @include header(red, 20px auto);
+        h1 { 
+            @include common(#fff, capitalize);
+        }
+}
+
+.third {
+    @include header(green, 30px auto);
+        h1 {
+            @include common(yellow, uppercase);
+        }
+}
+
+// mixins & extends
+.one {
+    @include divproperty;
+}
+.two {
+    background-color: red;
+    @extend .one;
+    border-radius: 5px;
+}
+.three {
+    @extend .two;
+    background-color: yellow;
+}
+
+// Variable & Interpolation
+.one {
+    margin-#{$position}: $value + 20px ;
+}
+.test {
+    @include margin(left, 20);
+}
+@include classname(domo);
+
+
+// Functions
+.test1 {
+        h1 {
+            text-transform: to-upper-case(uppercase);
+        }
+    
+}
